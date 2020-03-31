@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+<title>Cater 2 u</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  html {
+    background-color: #09a836;
+    font-family: Larish Alte;
+  }
+  h2{
+  font-family: Larish Alte;
+    font-size: 15pt;
+  }
+  
+.mySlides {display:none; margin:auto;}
+  
+  a:link, a:visited {
+        text-decoration: none;
+        font-family: Larish Alte;
+        color: #000000;
+        font-size: 30pt;
+      }
+      
+      a:hover {
+        text-shadow: 2px 2px 5px #000000;
+      }
+</style>
+<body>
+
+<h2 class="w3-center"><a href="index.html">Cater 2 u</a></h2>
+
+<div class="w3-content w3-display-center">
+  <img class="mySlides" src="1st_image_u2.png" style="height:550px">
+  <img class="mySlides" src="2nd_image_u2.png" style="height:550px">
+  <img class="mySlides" src="3rd_image_u2.png" style="height:550px">
+  <img class="mySlides" src="4th_image_u2.png" style="height:550px">
+  <img class="mySlides" src="5th_image_u2.png" style="height:550px">
+
+  <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+<h2 class="w3-center">Untitled(2), wooden panel, steel rings, clamps, felt, paper,12"x2"x15" 
+ </h2>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
